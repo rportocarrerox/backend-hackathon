@@ -1,0 +1,12 @@
+mongoose-gen -m pago -f tarjeta,monto:number,producto,dateoperacion:date,comercio -r -t m
+        create: ./pago/pagoRoutes.js
+        create: ./pago/pagoModel.js
+        create: ./pago/pagoController.js
+
+mongoose-gen -m comerciox -f convenio,KAM,RUC,NombreComercialMarca,Categoria,Promocion,Desde,Hasta,Campana,TC,TD,PSI,PV,Direcciones,latitude,longitude,TerminosyCondiciones,Masa,Core,Core -r -t m
+        create: ./comerciox/comercioRoutes.js
+        create: ./comerciox/comercioModel.js
+        create: ./comerciox/comercioController.js        
+
+
+git push heroku master
